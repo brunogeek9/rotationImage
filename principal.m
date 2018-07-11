@@ -1,6 +1,13 @@
 close all
 clear all
 pkg load image
-im = imread('E:\Documentos\TADS\Algoritmo Rotações\Imagens\Sementes germinadas\Lote 10 (01 - 100)\1.jpg');
+qtdImagens = 4;
+for x=4:qtdImagens
+  imageName = strcat(num2str(x),'.jpg');
+  #im = imread('C:\Users\jamelli\Desktop\Imagens\Imagens\Sementes germinadas\1.jpg');
+  im = imread(strcat('C:\Users\jamelli\Desktop\Imagens\Imagens\Sementes germinadas\',imageName));
+  geraImagens(im,x,10,36);
+endfor
+         
 
-geraImagens(im,10,36);
+Texto = 'Fim Algoritmo'
