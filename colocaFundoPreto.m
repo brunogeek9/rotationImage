@@ -1,5 +1,5 @@
 function rot3 = colocaFundoPreto(rot,rot2)
-  rot3 = zeros(size(rot2,1),size(rot2,2),3);
+  rot3 = rot;
   for i=1:size(rot2,1)
     for j=1:size(rot2,2)
       if rot2(i,j) > 0
